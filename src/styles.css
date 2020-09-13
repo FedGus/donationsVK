@@ -14,6 +14,17 @@ section{
     flex-direction: column
 }
 
+.center-block {
+    padding: 48px 0;
+    position: absolute;
+    width: 90%;
+    height: 196px;
+    top: calc(50% - 196px/2);
+    display: flex;
+flex-direction: column;
+align-items: center
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -37,6 +48,16 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-family: 'SF Pro Text';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: -0.32px;
+margin-bottom: 2px;
+}
+
 p {
     font-family: 'SF Pro Text';
     font-style: normal;
@@ -48,9 +69,17 @@ p {
     color: #818C99;
 }
 
+span {
+    font-family: SF Pro Text;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: -0.078px;
+color: #6D7885;
+}
+
 button {
-    display: flex;
-    flex-direction: row;
     padding: 8.5px 16px;
     position: static;
     background: #4986CC;
@@ -63,4 +92,21 @@ button {
     line-height: 20px;
     letter-spacing: -0.24px;
     color: #FFFFFF;
+}
+
+.card-link {
+    display: flex;
+position: static;
+left: 3.2%;
+right: 3.2%;
+top: 10.81%;
+bottom: 5.41%;
+background: #F5F5F5;
+border: 0.33px solid rgba(0, 0, 0, 0.08);
+box-sizing: border-box;
+border-radius: 10px;
+margin: 12px 0;
+}
+.icon {
+    margin: 22px;
 }
