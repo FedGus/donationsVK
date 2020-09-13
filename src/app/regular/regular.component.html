@@ -1,0 +1,32 @@
+<header>
+    <h1>Регулярный сбор</h1>
+</header>
+<section>
+        <form action="">
+            <div class="upload">
+                <label class="label">
+                 <img src="../../assets/icon-photo.svg" alt="icon" class="icon">
+                  <span class="title">Загрузить обложку</span>
+                  <input type="file" accept="image/x-png,image/gif,image/jpeg">
+                </label>
+            </div>
+            <label for="name">Название сбора</label>
+            <input type="text" name="name" placeholder="Название сбора" required>
+            <label for="money">Сумма, Руб.</label>
+            <input type="number" name="money" placeholder="Сколько нужно собрать?" required>
+            <label for="target">Цель</label>
+            <input type="text" name="target" placeholder="Например, поддержка приюта" required>
+            <label for="description">Описание</label>
+            <textarea name="description" cols="30" rows="2" placeholder="На что пойдут деньги и как они кому-то помогут?" required></textarea>
+            <label for="card">Куда получать деньги</label>
+            <select name="card" >
+                <option>Счет VK Pay 1234</option>
+            </select>
+            <label for="avtor">Автор</label>
+            <select name="avtor"> 
+                <option>Матвей Правосудов</option>
+            </select>
+                <input type="submit" value="Создать сбор">
+        </form>
+</section>
+

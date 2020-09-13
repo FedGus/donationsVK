@@ -79,7 +79,7 @@ letter-spacing: -0.078px;
 color: #6D7885;
 }
 
-button {
+button, input[type="submit"]{
     padding: 8.5px 16px;
     position: static;
     background: #4986CC;
@@ -110,3 +110,42 @@ margin: 12px 0;
 .icon {
     margin: 22px;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+form label {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #6D7885;
+}
+form input, textarea, select {
+    margin-bottom: 26px;
+    background: #F2F3F5;
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:12px;
+}
+
+.rad p{
+    text-align: left;
+    color: #000000;
+}
+.rad .radfirst {
+    margin-bottom: -13px;
+}
+
+
+.upload {margin-bottom: 26px;}
+.upload input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+.upload .label{border:2px dashed #4986CC;border-radius:5px; display:flex; padding:1.2em;transition:border 300ms ease;cursor:pointer; justify-content: center; padding-left: 20%;}
+.upload .label .title{color: #3F8AE0;transition:200ms color; font-size: 16px; align-self: center;}
+.upload .label:hover{border:2px solid #3F8AE0;}
+.upload .label:hover .title{color: #3F8AE0;}
