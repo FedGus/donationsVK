@@ -21,8 +21,8 @@ section{
     height: 196px;
     top: calc(50% - 196px/2);
     display: flex;
-flex-direction: column;
-align-items: center
+    flex-direction: column;
+    align-items: center
 }
 
 header {
@@ -50,14 +50,23 @@ h1 {
 
 h3 {
     font-family: 'SF Pro Text';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: -0.32px;
-margin-bottom: 2px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+    margin: 8px 0 2px 0;
 }
 
+h4 {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+    margin: 0;
+}
 p {
     font-family: 'SF Pro Text';
     font-style: normal;
@@ -71,42 +80,201 @@ p {
 
 span {
     font-family: SF Pro Text;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 16px;
-letter-spacing: -0.078px;
-color: #6D7885;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+    color: #6D7885;
 }
 
-button {
+.button-primary, input[type="submit"] {
     padding: 8.5px 16px;
     position: static;
     background: #4986CC;
     border: 0;
     border-radius: 10px;
-    font-family: SF Pro Text;
+    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.24px;
     color: #FFFFFF;
+    text-align: center;
+}
+
+.button-small {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.154px;
+    color: #3F8AE0;
+    display: flex;
+    flex-direction: column;
+    padding: 5.5px 16px;
+    border: 1px solid #3F8AE0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #FFFFFF
 }
 
 .card-link {
     display: flex;
-position: static;
-left: 3.2%;
-right: 3.2%;
-top: 10.81%;
-bottom: 5.41%;
-background: #F5F5F5;
-border: 0.33px solid rgba(0, 0, 0, 0.08);
-box-sizing: border-box;
-border-radius: 10px;
-margin: 12px 0;
+    justify-content: space-between;
+    position: static;
+    left: 3.2%;
+    right: 3.2%;
+    top: 10.81%;
+    bottom: 5.41%;
+    background: #F5F5F5;
+    border: 0.33px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 12px 0;
+    min-width: 350px;
 }
 .icon {
     margin: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.hr {
+    height: 0.5px;
+    background: #D7D8D9;
+    margin: 8px;
+}
+.card-preview {
+    width: 359px;
+    height: 246px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+}
+.card-preview {
+    width: 359px;
+    height: 246px;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img {
+   height: 140px;
+   overflow: hidden;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+.card-preview-title {
+    padding: 0 12px;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+}
+textarea {
+    border: 0;
+}
+
+progress {
+    height: 4px;
+    background: #3F8AE0;
+    opacity: 0.3;
+    border-radius: 2px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+}
+form label {
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #6D7885;
+}
+form input, textarea, select {
+    margin-bottom: 26px;
+    background: #F2F3F5;
+    border: 0.5px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:12px;
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.32px;
+    color: #000000;
+}
+.non_border {
+    border: 0;
+    background: transparent;
+    width: 100%;
+}
+
+::placeholder {
+    font-family: SF Pro Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.32px;
+    color: #818C99;
+  }
+
+.rad p{
+    text-align: left;
+    color: #000000;
+}
+.rad .radfirst {
+    margin-bottom: -13px;
+}
+
+
+.upload {margin-bottom: 26px;}
+.upload input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+.upload .label{border:2px dashed #4986CC;border-radius:5px; display:flex; padding:1.2em;transition:border 300ms ease;cursor:pointer; justify-content: center; padding-left: 20%;}
+.upload .label .title{color: #3F8AE0;transition:200ms color; font-size: 16px; align-self: center;}
+.upload .label:hover{border:2px solid #3F8AE0;}
+.upload .label:hover .title{color: #3F8AE0;}
+
+input[type=file] {
+    position: absolute;
+    z-index: 0;
+}
+label {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #6D7885;
 }

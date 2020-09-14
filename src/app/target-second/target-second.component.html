@@ -1,0 +1,19 @@
+<header>
+    <h1>Целевой сбор 2. </h1>
+</header>
+<section>
+        <form action="/preview" [ngStyle]="{'margin-top':'17px'}">
+            <label for="avtor">Автор</label>
+            <select name="avtor"> 
+                <option>Матвей Правосудов</option>
+            </select>
+            <label for="date">Сбор завершиться</label>
+            <div class="rad">
+            <p><input class="radfirst" type="radio" name="date" checked> Когда соберем сумму</p>
+            <p><input type="radio" name="date" checked> В определенную дату</p>
+            </div>
+            <label for="end">Дата окончания</label>
+            <input type="date" name="end">
+            <button class="button-primary">Создать сбор</button>
+        </form>
+</section>
